@@ -1,3 +1,60 @@
 .header {
+    &-nav {
+        @include flex(flex, row, wrap, space-around, center);
+        background-color: $color-white;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        transition: 1.5s ease-in-out;
+        width: 100%;    
+        z-index: 5;
+        
+        &-list {
+            @include flex(flex, row, wrap, space-around, center);
+            list-style-type: none;
 
+            &-item {
+                display: inline-block;
+
+                a {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+
+    &-content {
+        @include flex(flex, row, wrap, space-between, center);
+        background-color: $color-primary;
+        height: 550px;
+        padding: 70px;
+        position: relative;
+
+        &-text {
+            color: $color-white;
+            font-size: 40px;
+            width: 60%;
+        }
+
+        &-menu {
+            @include flex(flex, column, nowrap, space-around, center);
+            background-color: $color-white;
+            height: inherit;
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            transition: 1.5s ease-in-out;
+            width: 35%;
+
+            &-list {
+                @include flex(flex, column, wrap, space-around, center);
+                list-style-type: none;
+                font-size: 24px;
+            }
+        }
+    }
+  
+    &-hidden {
+        right: -3000px;
+    }
 }
