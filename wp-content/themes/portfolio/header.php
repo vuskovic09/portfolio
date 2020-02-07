@@ -29,7 +29,7 @@
         <!-- header -->
         <header class="header">
             <div class="header-nav header-hidden">
-                <div class="header-nav-title"><h3>Filip Vušković</h3></div>
+                <div class="header-nav-title"><h3><span><span><span>Filip Vušković</span></span></span></h3></div>
                 <ul class="header-nav-list">
                     <li class="header-nav-list-item"><a href=#>LINK</a>
                     <li class="header-nav-list-item"><a href=#>LINK</a>
@@ -40,8 +40,8 @@
             <div class="header-content">
                 <div class="header-content-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium praesentium porro ipsam in? Ad repellat placeat nam? Vero, temporibus praesentium quas totam facilis fugit, nisi commodi iusto magni voluptates iste.</div>
                 <div class="header-content-menu">
-                    <h4>PLACEHOLDER</h4>
                     <!-- circular img + navigation -->
+                    <h3><span><span><span>Filip Vušković</span></span></span></h3>
                     <ul class="header-content-menu-list">
                         <li class="header-content-menu-list-item"><a href=#>LINK</a></li>
                         <li class="header-content-menu-list-item"><a href=#>LINK</a></li>

@@ -43,7 +43,7 @@ h6 {
 
 a {
 
-    @include link-color($color-link-default, $color-link-hover, none, underline);
+    @include link-color($color-black, $color-black, none, none);
 	transition: all .3s ease;
 
 	&:focus {

@@ -1,30 +1,36 @@
 .header {
     &-nav {
         @include flex(flex, row, wrap, space-around, center);
+        
         background-color: $color-white;
         position: fixed;
         right: 0px;
         top: 0px;
-        transition: 1.5s ease-in-out;
+        transition: 1.65s ease-in-out;
         width: 100%;    
         z-index: 5;
+
+        &-title {
+            h3{
+                @include border-hover($color-black, $color-secondary, 2px, 0.8s);
+            }
+        }
         
         &-list {
             @include flex(flex, row, wrap, space-around, center);
-            list-style-type: none;
+            @include list-reset;
 
             &-item {
-                display: inline-block;
+                @include link-underline($color-secondary, 3px);
 
-                a {
-                    padding: 15px;
-                }
+                margin-left: 10px;
             }
         }
     }
 
     &-content {
         @include flex(flex, row, wrap, space-between, center);
+
         background-color: $color-primary;
         height: 550px;
         padding: 70px;
@@ -37,19 +43,31 @@
         }
 
         &-menu {
-            @include flex(flex, column, nowrap, space-around, center);
+            @include flex(flex, column, nowrap, space-evenly, center);
+
             background-color: $color-white;
             height: inherit;
+            padding: 3%;
             position: fixed;
             right: 0px;
             top: 0px;
-            transition: 1.5s ease-in-out;
+            transition: 1.65s ease-in-out;
             width: 35%;
 
+            h3 {
+                @include border-hover($color-black, $color-secondary, 2px, 0.8s);
+            }
+
             &-list {
-                @include flex(flex, column, wrap, space-around, center);
-                list-style-type: none;
+                @include flex(flex, column, wrap, space-evenly, center);
+                @include list-reset;
+
                 font-size: 24px;
+                //padding?
+
+                &-item {
+                    @include link-underline($color-secondary, 3px);
+                }
             }
         }
     }
