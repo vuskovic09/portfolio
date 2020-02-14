@@ -1,3 +1,29 @@
 .main {
-	
+    background-color: $color-primary;
+
+    &-skills {
+        @include flex(flex, row, wrap, space-around, center);
+
+        background-color: $color-background;
+        padding: 110px;
+
+        &-single {
+	        background: $color-background;
+	        border-radius: 5px;
+	        box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+            text-align: center;
+            height: 250px; //TEMP
+            width: 250px;
+            
+            h2 {
+                font-family: $font-light;
+            }
+        }
+    }
+
+    &-about {
+        background: $color-primary;
+        height: 500px; //TEMP
+        width: 100%;
+    }
 }

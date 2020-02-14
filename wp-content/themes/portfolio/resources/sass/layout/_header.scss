@@ -1,8 +1,10 @@
 .header {
     &-nav {
         @include flex(flex, row, wrap, space-around, center);
-        
-        background-color: $color-white;
+
+        background-color: $color-background;
+        box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+        padding: 3px;
         position: fixed;
         right: 0px;
         top: 0px;
@@ -12,7 +14,9 @@
 
         &-title {
             h3{
-                @include border-hover($color-black, $color-secondary, 2px, 0.8s);
+                @include border-hover($color-black, lighten($color-primary, 15%), 2px, 0.8s);
+
+                font-family: $font-bold;
             }
         }
         
@@ -21,9 +25,13 @@
             @include list-reset;
 
             &-item {
-                @include link-underline($color-secondary, 3px);
+                @include link-underline($color-primary, 3px);
 
-                margin-left: 10px;
+                margin-left: 30px;
+
+                a {
+                    font-size: 21px;
+                }
             }
         }
     }
@@ -43,30 +51,39 @@
         }
 
         &-menu {
-            @include flex(flex, column, nowrap, space-evenly, center);
+            @include flex(flex, column, nowrap, space-around, center);
 
-            background-color: $color-white;
+            background-color: $color-primary;
             height: inherit;
             padding: 3%;
-            position: fixed;
+            position: absolute;
             right: 0px;
             top: 0px;
             transition: 1.65s ease-in-out;
             width: 35%;
 
-            h3 {
-                @include border-hover($color-black, $color-secondary, 2px, 0.8s);
+            h1 {
+                @include border-hover($color-primary, $color-white, 2px, 0.8s);
+
+                color: $color-white;
+                font-family: $font-bold;
             }
 
             &-list {
-                @include flex(flex, column, wrap, space-evenly, center);
+                @include flex(flex, column, nowrap, space-between ,center);
                 @include list-reset;
 
                 font-size: 24px;
                 //padding?
 
                 &-item {
-                    @include link-underline($color-secondary, 3px);
+                    @include link-underline($color-white, 3px);
+                    
+                    margin-bottom: 10px;
+
+                    a {
+                        color: $color-white;
+                    }
                 }
             }
         }

@@ -31,27 +31,34 @@
             <div class="header-nav header-hidden">
                 <div class="header-nav-title"><h3><span><span><span>Filip Vušković</span></span></span></h3></div>
                 <ul class="header-nav-list">
-                    <li class="header-nav-list-item"><a href=#>LINK</a>
-                    <li class="header-nav-list-item"><a href=#>LINK</a>
-                    <li class="header-nav-list-item"><a href=#>LINK</a>
-                    <li class="header-nav-list-item"><a href=#>LINK</a>
+                    <li class="header-nav-list-item"><a href=#>Skills</a>
+                    <li class="header-nav-list-item"><a href=#>About</a>
+                    <li class="header-nav-list-item"><a href=#>Projects</a>
+                    <li class="header-nav-list-item"><a href=#>Contact</a>
                 </ul>
             </div>
             <div class="header-content">
                 <div class="header-content-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium praesentium porro ipsam in? Ad repellat placeat nam? Vero, temporibus praesentium quas totam facilis fugit, nisi commodi iusto magni voluptates iste.</div>
                 <div class="header-content-menu">
                     <!-- circular img + navigation -->
-                    <h3><span><span><span>Filip Vušković</span></span></span></h3>
+                    <h1><span><span><span>Filip Vušković</span></span></span></h1>
                     <ul class="header-content-menu-list">
-                        <li class="header-content-menu-list-item"><a href=#>LINK</a></li>
-                        <li class="header-content-menu-list-item"><a href=#>LINK</a></li>
-                        <li class="header-content-menu-list-item"><a href=#>LINK</a></li>
-                        <li class="header-content-menu-list-item"><a href=#>LINK</a></li>
+                        <li class="header-content-menu-list-item"><a href=#>Skills</a></li>
+                        <li class="header-content-menu-list-item"><a href=#>About</a></li>
+                        <li class="header-content-menu-list-item"><a href=#>Projects</a></li>
+                        <li class="header-content-menu-list-item"><a href=#>Contact</a></li>
                     </ul>   
                 </div>
             </div>
         </header>
         <!-- /header -->
+
+        <div class="tab">
+            <svg class="slant-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <polygon points="100 0 100 100 0 100" />
+            </svg>
+            <h3 class="tab-black"><a href="#">Skills</a></h3>
+        </div>
 
         <!-- main -->
         <main class="main">

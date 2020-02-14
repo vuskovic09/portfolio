@@ -1,3 +1,23 @@
+@font-face {
+    font-family: gravityR;
+    src: url(../fonts/gravityR.otf);
+}
+
+@font-face {
+    font-family: gravityL;
+    src: url(../fonts/gravityL.otf);
+}
+
+@font-face {
+    font-family: gravityB;
+    src: url(../fonts/gravityB.otf);
+}
+
+@font-face {
+    font-family: gravityI;
+    src: url(../fonts/gravityI.otf);
+}
+
 body {
     background-color: $color-background;
     color: $color-text;
