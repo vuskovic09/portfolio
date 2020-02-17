@@ -15,21 +15,4 @@
         }
         margin: 0px auto;
     }
-
-    .slant-right {
-        display: block;
-        width: 65%;
-        height: 90px;
-        background: $color-primary;
-        fill: $color-background;
-    }
-
-    .slant-left {
-        background: $color-primary;
-        display: block;
-        fill: $color-background;
-        position: relative;
-        height: 90px;
-        width: 65%;
-    }
 }

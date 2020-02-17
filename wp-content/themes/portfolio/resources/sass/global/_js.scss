@@ -1,0 +1,11 @@
+.js {
+    &-hidden {
+        &-right {
+            transform: translateX(3000px) !important; //?
+        }
+
+        &-left {
+            transform: translateX(-3000px) !important; //?
+        }
+    }
+}

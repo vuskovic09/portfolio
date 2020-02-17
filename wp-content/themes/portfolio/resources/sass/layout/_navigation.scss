@@ -1,13 +1,26 @@
-.navigation {
-
-    &-list {
-
-		@include list-reset;
-
-		li {
-
+.sidebar{
+	&-navigation {
+		left: 0px;
+		position: fixed;
+		top: 50vh;
+		transition: 1.65s ease-in-out;
+		transform: translateX(0);
+		width: 50px;//TEMP
+		
+		&-social {
+			@include flex(flex, column, nowrap, space-around, center);
+			@include list-reset;
+			
+			background-color: $color-background;
+			border-radius: 0px 5px 5px 0px;
+			box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+			padding: 10px;
+			
+			li {
+				a {
+					font-size: 16px;
+				}
+			}
 		}
-
-    }
-
+	}
 }
