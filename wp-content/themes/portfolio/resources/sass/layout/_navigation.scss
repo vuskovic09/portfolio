@@ -1,11 +1,10 @@
 .sidebar{
 	&-navigation {
-		left: 0px;
+		left: 0;
 		position: fixed;
 		top: 50vh;
 		transition: 1.65s ease-in-out;
 		transform: translateX(0);
-		width: 50px;//TEMP
 		
 		&-social {
 			@include flex(flex, column, nowrap, space-around, center);
@@ -18,7 +17,21 @@
 			
 			li {
 				a {
-					font-size: 16px;
+					.icon {
+						font-size: 26px;
+
+						&-github {
+							color: $color-github;
+						}
+						
+						&-linkedin {
+							color: $color-linkedin;
+						}
+						
+						&-twitter {
+							color: $color-twitter;
+						}
+					}
 				}
 			}
 		}

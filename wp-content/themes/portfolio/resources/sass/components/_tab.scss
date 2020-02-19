@@ -1,18 +1,61 @@
 .tab {
-    @include flex(flex, row, wrap, space-between, center);
-    
-    &-black {
-        a {
-            font-family: $font-light;
+
+    &-left, &-right {
+        height: 90px;
+        width: 100%;
+
+        &-header {
+            height: 100%;
+            padding: 25px;
+            text-align: center;
+            width: 35%;
+            
+            a {
+                font-size: 24px;
+            }
         }
-        margin: 0px auto;
     }
 
-    &-white {
-        a {
-            color: $color-white;
-            font-family: $font-light;
+    &-left {
+        background-color: $color-background;
+        
+
+        &-header {
+            background-color: $color-primary;
+            float: left;
+
+            a {
+                color: $color-white;
+            }
         }
-        margin: 0px auto;
-    }
+
+        .slant-left {
+            float: left;
+            height: 0;
+            width: 0;
+            border-bottom: 100px solid $color-primary;
+            border-right: 100px solid transparent;
+        }
+    }   
+
+    &-right {
+        background-color: $color-primary;
+
+        &-header {
+            background-color: $color-background;
+            float: right;
+
+            a {
+                color: $color-black;
+            }
+        }
+
+        .slant-right {
+            float: right;
+            height: 0;
+            width: 0;
+            border-bottom: 100px solid $color-background;
+            border-left: 100px solid transparent;
+        }
+    }   
 }

@@ -14,11 +14,14 @@
 	</div>
 </section>
 
-<div class="tab slant-right">
-	<h3 class="tab-black"><a href="#">Skills</a></h3>
+<div class="row">
+	<div class="tab tab-right">
+		<div class="tab-right-header"><a href="#">Skills</a></div>
+		<span class="slant-right"></span>
+	</div>
 </div>
 
-<div class="main-skills">
+<section class="main-skills">
 	<div class="container">
 		<div class ="row center">
 			<div class="col-lg-4">
@@ -37,11 +40,28 @@
 				</div>
 			</div>
 		</div>
-		<div class="tab">
-			<h3 class="tab-white"><a href="#">About</a></h3>
-		</div>	
+	</div>
+</section>
+
+<div class="row">
+	<div class="tab tab-left">
+		<div class="tab-left-header"><a href="#">About</a></div>
+		<span class="slant-left"></span>
 	</div>
 </div>
+
+<section class="main-about">
+	<div class="container">
+		<div class="row center">
+			<div class="col-lg-6">
+
+			</div>
+			<div class="col-lg-6">
+				
+			</div>
+		</div>
+	</div>
+</section>
 
 	<?php get_template_part('/template-parts/loop'); ?>
 

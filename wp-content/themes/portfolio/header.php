@@ -26,6 +26,11 @@
     </head>
     <body <?php body_class(); ?>>
 
+        <!-- PRELOADER -->
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+
         <!-- header -->
         <header class="header">
             <div class="header-nav js-hidden-right">

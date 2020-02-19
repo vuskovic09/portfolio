@@ -8,22 +8,19 @@
         padding: 85px;
 
         &-single {
-	        background: $color-background;
-	        border-radius: 5px;
-	        box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+            background: $color-background;
+            border-radius: 5px;
+            box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+            padding: 3px;
             text-align: center;
-            height: 250px; //TEMP
+            min-height: 250px;
             width: 250px;
-            
-            h2 {
-                font-family: $font-light;
-            }
         }
     }
 
     &-about {
         background: $color-primary;
-        height: 500px; //TEMP
+        min-height: 500px;
         width: 100%;
     }
 }

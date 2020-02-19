@@ -6,8 +6,8 @@
         box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
         padding: 3px;
         position: fixed;
-        right: 0px;
-        top: 0px;
+        right: 0;
+        top: 0;
         transition: 1.65s ease-in-out;
         transform: translateX(0);
         width: 100%;    
@@ -16,8 +16,6 @@
         &-title {
             h3 {
                 @include border-hover($color-black, lighten($color-primary, 15%), 2px, 0.8s);
-
-                font-family: $font-bold;
             }
         }
         
