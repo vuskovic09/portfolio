@@ -1,14 +1,15 @@
 .hero {
-    @include flex(flex, row, wrap, space-between, center);
+    // @include flex(flex, row, wrap, space-between, center);
 
     background-color: $color-primary;
-    padding: 5%;
+    padding: 5% 0;
     position: relative;
 
     &-text {
         color: $color-white;
         font-size: 38px;
-        width: 60%;
+        padding: 0 4%;
+        // width: 60%;
     }
 
     &-menu {
@@ -16,18 +17,19 @@
 
         background-color: $color-primary;
         height: inherit;
-        padding: 3%;
+        // padding: 3%;
         position: absolute;
         right: 0;
         top: 0;
-        transition: 1.65s ease-in-out;
+        transition: 1.35s ease-in-out;
         transform: translateX(0);
-        width: 35%;
+        // width: 35%;
 
         h1 {
             @include border-hover($color-primary, $color-white, 2px, 0.8s);
 
             color: $color-white;
+            font-size: 32px;
         }
 
         &-list {
@@ -35,7 +37,6 @@
             @include list-reset;
 
             font-size: 24px;
-            //padding?
 
             &-item {
                 @include link-underline($color-white, 3px);

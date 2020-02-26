@@ -24,26 +24,31 @@
         <?php wp_head(); ?>
 
     </head>
+
     <body <?php body_class(); ?>>
 
-        <!-- PRELOADER -->
-        <div id="preloader">
-            <div id="loader"></div>
-        </div>
-
-        <!-- header -->
-        <header class="header">
-            <div class="header-nav js-hidden-right">
-                <div class="header-nav-title"><h3><span><span><span>Filip Vušković</span></span></span></h3></div>
-                <ul class="header-nav-list">
-                    <li class="header-nav-list-item"><a href=#>Skills</a>
-                    <li class="header-nav-list-item"><a href=#>About</a>
-                    <li class="header-nav-list-item"><a href=#>Projects</a>
-                    <li class="header-nav-list-item"><a href=#>Contact</a>
-                </ul>
+        <!-- wrapper -->
+        <div class="page-wrapper">
+            
+            <!-- preloader -->
+            <div id="preloader">
+                <div id="loader"></div>
             </div>
-        </header>
-        <!-- /header -->
+            <!-- /preloader -->
 
-        <!-- main -->
-        <main class="main">
+            <!-- header -->
+            <header class="header">
+                <div class="header-nav js-hidden-up">
+                    <div class="header-nav-title"><h3><span><span><span>Filip Vušković</span></span></span></h3></div>
+                    <ul class="header-nav-list">
+                        <li class="header-nav-list-item"><a href=#>Skills</a>
+                        <li class="header-nav-list-item"><a href=#>About</a>
+                        <li class="header-nav-list-item"><a href=#>Projects</a>
+                        <li class="header-nav-list-item"><a href=#>Contact</a>
+                    </ul>
+                </div>
+            </header>
+            <!-- /header -->
+
+            <!-- main -->
+            <main class="main">

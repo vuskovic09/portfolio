@@ -1,5 +1,10 @@
 .js {
     &-hidden {
+
+        &-up {
+            transform: translateY(-3000px) !important; //?
+        }
+
         &-right {
             transform: translateX(3000px) !important; //?
         }
@@ -8,12 +13,4 @@
             transform: translateX(-3000px) !important; //?
         }
     }
-
-    // &-card {
-    //     background: $color-background;
-    //     border-radius: 5px;
-    //     box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
-
-    //     transition: 0.25s ease-in-out;
-    // }
 }

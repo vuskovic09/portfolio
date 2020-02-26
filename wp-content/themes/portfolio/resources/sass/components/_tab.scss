@@ -6,12 +6,13 @@
 
         &-header {
             height: 100%;
-            padding: 25px;
+            padding-top: 25px;
             text-align: center;
             width: 35%;
             
             a {
-                font-size: 24px;
+                font-size: 28px;
+                font-weight: $font-weight-extrabold;
             }
         }
     }
@@ -28,14 +29,6 @@
                 color: $color-white;
             }
         }
-
-        .slant-left {
-            float: left;
-            height: 0;
-            width: 0;
-            border-bottom: 100px solid $color-primary;
-            border-right: 100px solid transparent;
-        }
     }   
 
     &-right {
@@ -49,13 +42,23 @@
                 color: $color-black;
             }
         }
+    }
 
-        .slant-right {
-            float: right;
-            height: 0;
-            width: 0;
-            border-bottom: 100px solid $color-background;
-            border-left: 100px solid transparent;
+    .slant {
+        height: 0;
+        width: 0;
+
+        &-left {
+            float: left;
+            border-bottom: 90px solid $color-primary;
+            border-right: 90px solid transparent;
         }
+
+        &-right {
+            float: right;
+            border-bottom: 90px solid $color-background;
+            border-left: 90px solid transparent;
+        }
+
     }   
 }

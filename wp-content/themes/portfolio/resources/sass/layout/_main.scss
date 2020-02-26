@@ -1,26 +1,50 @@
 .main {
-    background-color: $color-primary;
+    background-color: $color-background;
+
+    section:nth-of-type(even) {
+        background-color: $color-background;
+    }
+    section:nth-of-type(odd) {
+        background-color: $color-primary;
+    }
+
+    &-skills, &-about, &-projects, &-contact, &-form {
+        min-height: 300px;
+        padding: 100px 0;
+    }
 
     &-skills {
-        @include flex(flex, row, wrap, space-around, center);
-
-        background-color: $color-background;
-        padding: 85px;
 
         &-single {
             background: $color-background;
             border-radius: 5px;
-            box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+            box-shadow: -5px -5px 20px $color-white,  5px 5px 20px $color-shadow;
             padding: 3px;
             text-align: center;
-            min-height: 250px;
-            width: 250px;
+            min-height: 350px;
+            margin: 0;
         }
     }
 
     &-about {
-        background: $color-primary;
-        min-height: 500px;
+        padding: 100px;
         width: 100%;
+
+        &-text {
+            color: $color-white;
+            font-size: 24px;
+        }
+    }
+
+    &-projects {
+        &-slider {
+
+        }
+    }
+
+    &-contact {
+        &-info {
+            
+        }
     }
 }
