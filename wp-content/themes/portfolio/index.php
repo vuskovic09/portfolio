@@ -34,19 +34,34 @@
 <section id="skills" class="main-skills">
 	<div class="container">
 		<div class ="row center around">
-			<div class="col-lg-4">
+			<div class="col-lg-4 main-skills-row">
 				<div class="main-skills-single">
 					<h2>HTML</h2>
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 main-skills-row">
 				<div class="main-skills-single">
 					<h2>CSS</h2>
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 main-skills-row">
 				<div class="main-skills-single">
 					<h2>JavaScript</h2>
+				</div>
+			</div>
+			<div class="col-lg-4 main-skills-row">
+				<div class="main-skills-single">
+					<h2>PHP</h2>
+				</div>
+			</div>
+			<div class="col-lg-4 main-skills-row">
+				<div class="main-skills-single">
+					<h2>SQL</h2>
+				</div>
+			</div>
+			<div class="col-lg-4 main-skills-row">
+				<div class="main-skills-single">
+					<h2>C#</h2>
 				</div>
 			</div>
 		</div>
@@ -68,7 +83,7 @@
 			<div class="col-lg-12">
 				<div class="main-about-text">
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias sunt, ut modi eum magni labore deserunt iusto possimus incidunt rem repellat totam laborum culpa voluptatem. Facere error sequi aperiam?
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias sunt, ut modi eum magni labore deserunt iusto possimus incidunt rem repellat totam laborum culpa voluptatem. Facere error sequi aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur officia suscipit esse a eius rem, eos repudiandae cum ullam ad tempora debitis perferendis optio! Odit quaerat porro placeat eveniet.
 					</p>
 				</div>	
 			</div>
@@ -100,7 +115,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="tab tab-left">
-			<div class="tab-left-header col-lg-4"><a class="link" href="contact-info">Contact information</a></div>
+			<div class="tab-left-header col-lg-4"><a class="link" href="contact-info">Contact Information</a></div>
 			<span class="slant slant-left"></span>
 		</div>
 	</div>
@@ -110,8 +125,10 @@
 	<div class="container">
 		<div class="row center">
 			<div class="col-lg-12">
-				<div class="main-contact-info">
-					
+				<div class="main-contact-text">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem libero facere ab sed illo vitae voluptate hic, repudiandae ad minus quasi ullam ducimus in saepe obcaecati, doloremque sapiente! Harum, dicta! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio beatae amet repellat odio autem, rem deleniti optio, voluptates incidunt asperiores quae temporibus ex dolore velit. Incidunt necessitatibus accusantium porro ex!
+					</p>
 				</div>
 			</div>
 		</div>
@@ -127,7 +144,7 @@
 	</div>
 </div>
 
-<section id="contact-form" class="form">
+<section id="contact-form" class="main-form">
 	<div class="container">
 		<div class="row center">
 			<div class="col-lg-12">
@@ -142,11 +159,8 @@
 							<input type="mail" placeholder="E-mail" />	
 						</label>
 						<label class="input-group half">
-							<!-- <input type="textarea" rows="10" placeholder="Message" /> -->
-							<textarea rows="10"></textarea>
-							<button class="blue" type="button">Send!</button>	
-						</label>
-						<label class="input-group">
+							<textarea placeholder="Your message" rows="10"></textarea>
+							<button type="button">Send!</button>	
 						</label>
 					</form>
 				</div>
@@ -158,7 +172,7 @@
 
 
 
-	<?php get_template_part('/template-parts/loop'); ?>
+	<?php #get_template_part('/template-parts/loop'); ?>
 
 <?php get_sidebar(); ?>
 

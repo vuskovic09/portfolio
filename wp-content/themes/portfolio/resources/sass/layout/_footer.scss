@@ -1,3 +1,19 @@
 .footer {
+    background-color: $color-primary;
 
+    &-text {
+        text-align: center;
+        padding: 7.5px;
+
+        a {
+            color: $color-white;
+            font-size: 14px;
+            font-weight: $font-weight-light;
+
+            &:hover {
+                color: rgba($color-black, 1);
+            }
+        }
+        
+    }
 }

@@ -10,10 +10,14 @@
 
     &-skills, &-about, &-projects, &-contact, &-form {
         min-height: 300px;
-        padding: 100px 0;
+        padding: 70px 0;
     }
 
     &-skills {
+
+        &-row {
+            margin-bottom: 48px;
+        }
 
         &-single {
             background: $color-background;
@@ -26,25 +30,12 @@
         }
     }
 
-    &-about {
+    &-about, &-contact {
         padding: 100px;
-        width: 100%;
-
+        
         &-text {
             color: $color-white;
             font-size: 24px;
-        }
-    }
-
-    &-projects {
-        &-slider {
-
-        }
-    }
-
-    &-contact {
-        &-info {
-            
         }
     }
 }
