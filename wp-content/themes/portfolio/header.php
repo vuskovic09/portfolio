@@ -37,14 +37,15 @@
             <!-- /preloader -->
 
             <!-- header -->
-            <header class="header">
+            <header id="header" class="header">
                 <div class="header-nav js-hidden-up">
                     <div class="header-nav-title"><h3><span><span><span>Filip Vušković</span></span></span></h3></div>
                     <ul class="header-nav-list">
-                        <li class="header-nav-list-item"><a href=#>Skills</a>
-                        <li class="header-nav-list-item"><a href=#>About</a>
-                        <li class="header-nav-list-item"><a href=#>Projects</a>
-                        <li class="header-nav-list-item"><a href=#>Contact</a>
+                        <li class="header-nav-list-item"><a class="link" href="skills">Skills</a></li>
+                        <li class="header-nav-list-item"><a class="link" href="about">About</a></li>
+                        <li class="header-nav-list-item"><a class="link" href="projects">Projects</a></li>
+                        <li class="header-nav-list-item"><a class="link" href="contact-info">Contact Information</a></li>
+                        <li class="header-nav-list-item"><a class="link" href="contact-form">Contact Form</a></li>
                     </ul>
                 </div>
             </header>

@@ -11,10 +11,11 @@
 			<div class="hero-menu col-lg-4">
 				<h1><span><span><span>Filip Vušković</span></span></span></h1>
 				<ul class="hero-menu-list">
-					<li class="hero-menu-list-item"><a href=#>Skills</a></li>
-					<li class="hero-menu-list-item"><a href=#>About</a></li>
-					<li class="hero-menu-list-item"><a href=#>Projects</a></li>
-					<li class="hero-menu-list-item"><a href=#>Contact</a></li>
+					<li class="hero-menu-list-item"><a class="link" href="skills">Skills</a></li>
+					<li class="hero-menu-list-item"><a class="link" href="about">About</a></li>
+					<li class="hero-menu-list-item"><a class="link" href="projects">Projects</a></li>
+					<li class="hero-menu-list-item"><a class="link" href="contact-info">Contact Information</a></li>
+					<li class="hero-menu-list-item"><a class="link" href="contact-form">Contact Form</a></li>
 				</ul>   
 			</div>
 		</div>
@@ -24,13 +25,13 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="tab tab-right">
-			<div class="tab-right-header col-lg-4"><a href="#">Skills</a></div>
+			<div class="tab-right-header col-lg-4"><a class="link" href="skills">Skills</a></div>
 			<span class=" slant slant-right"></span>
 		</div>
 	</div>
 </div>
 
-<section class="main-skills">
+<section id="skills" class="main-skills">
 	<div class="container">
 		<div class ="row center around">
 			<div class="col-lg-4">
@@ -55,13 +56,13 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="tab tab-left">
-			<div class="tab-left-header col-lg-4"><a href="#">About</a></div>
+			<div class="tab-left-header col-lg-4"><a class="link" href="about">About</a></div>
 			<span class="slant slant-left"></span>
 		</div>
 	</div>
 </div>
 
-<section class="main-about">
+<section id="about" class="main-about">
 	<div class="container">
 		<div class="row center">
 			<div class="col-lg-12">
@@ -78,13 +79,13 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="tab tab-right">
-			<div class="tab-right-header col-lg-4"><a href="#">Projects</a></div>
+			<div class="tab-right-header col-lg-4"><a class="link" href="projects">Projects</a></div>
 			<span class="slant slant-right"></span>
 		</div>
 	</div>
 </div>
 
-<section class="main-projects">
+<section id="projects" class="main-projects">
 	<div class="container">
 		<div class="row center">
 			<div class="col-lg-12">
@@ -99,13 +100,13 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="tab tab-left">
-			<div class="tab-left-header col-lg-4"><a href="#">Contact information</a></div>
+			<div class="tab-left-header col-lg-4"><a class="link" href="contact-info">Contact information</a></div>
 			<span class="slant slant-left"></span>
 		</div>
 	</div>
 </div>
 
-<section class="main-contact">
+<section id="contact-info" class="main-contact">
 	<div class="container">
 		<div class="row center">
 			<div class="col-lg-12">
@@ -120,13 +121,13 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="tab tab-right">
-			<div class="tab-right-header col-lg-4"><a href="#">Contact Form</a></div>
+			<div class="tab-right-header col-lg-4"><a class="link" href="contact-form">Contact Form</a></div>
 			<span class="slant slant-right"></span>
 		</div>
 	</div>
 </div>
 
-<section class="form">
+<section id="contact-form" class="form">
 	<div class="container">
 		<div class="row center">
 			<div class="col-lg-12">
@@ -140,11 +141,12 @@
 							<input type="text" placeholder="Name" />
 							<input type="mail" placeholder="E-mail" />	
 						</label>
-						<label class="input-group">
-							<input type="text" placeholder="Message" />
+						<label class="input-group half">
+							<!-- <input type="textarea" rows="10" placeholder="Message" /> -->
+							<textarea rows="10"></textarea>
+							<button class="blue" type="button">Send!</button>	
 						</label>
 						<label class="input-group">
-							<button class="blue" type="button">Send!</button>	
 						</label>
 					</form>
 				</div>

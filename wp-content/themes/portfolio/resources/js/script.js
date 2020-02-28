@@ -9,6 +9,15 @@
 			setTimeout(function(){
 				$('#preloader').fadeOut();
 			}, 2000);
+
+				$('.link').click(function(event){
+					event.preventDefault();
+					var target = $(this).attr('href');
+			
+				$('html, body').animate({
+					scrollTop: $("#" + target).offset().top - 2.2 * $('.tab').height()
+				}, 500);
+				});
 		});
 
 		$(document).scroll(function(){
