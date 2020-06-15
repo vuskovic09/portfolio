@@ -15,7 +15,7 @@
 
         &-title {
             h3 {
-                @include border-hover($color-black, lighten($color-primary, 15%), 2px, 0.8s);
+                @include border-hover($color-black, $color-primary, 2px, 0.8s);
             }
         }
         

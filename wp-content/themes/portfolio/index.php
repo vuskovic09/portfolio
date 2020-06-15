@@ -1,6 +1,10 @@
 <?php get_header(); ?>
 	
 <section class="hero">
+	<div class="container">
+		<input class="dark-mode" type="checkbox" id="switch" name="mode">
+        <label for="switch">Toggle</label>
+    </div>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="hero-text col-lg-7">
@@ -154,14 +158,14 @@
 							<h1><a>Send me a message</a></h1>
 						</div>
 						
-						<label class="input-group half">
+						<span class="input-group half">
 							<input type="text" placeholder="Name" />
 							<input type="mail" placeholder="E-mail" />	
-						</label>
-						<label class="input-group half">
+						</span>
+						<span class="input-group half">
 							<textarea placeholder="Your message" rows="10"></textarea>
 							<button type="button">Send!</button>	
-						</label>
+						</span>
 					</form>
 				</div>
 			</div>

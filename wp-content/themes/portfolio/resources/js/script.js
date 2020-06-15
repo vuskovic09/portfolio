@@ -22,6 +22,18 @@
 			
 		});
 
+		var checkbox = document.querySelector('#switch');
+		var root = document.documentElement;
+		var darkPrimary = root.style.getPropertyValue('--primaryDark');
+		var	darkBackground = root.style.getPropertyValue('--darkBackground');
+
+        checkbox.addEventListener('change', function() {
+			console.log(darkPrimary);
+			
+			root.style.setProperty('--primaryLight', darkPrimary);
+			root.style.setProperty('--primaryBackground', --darkBackground);
+		});
+
 		$(document).scroll(function(){
 			//HEADER + HERO + SIDEBAR ANIMATIONS
 			if($(window).scrollTop() == 0){
