@@ -1,7 +1,7 @@
 .hero {
     // @include flex(flex, row, wrap, space-between, center);
 
-    background-color: $color-primary;
+    background-color: $color-primary !important;
     padding: 5% 0;
     position: relative;
 

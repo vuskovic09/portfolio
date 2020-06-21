@@ -24,16 +24,33 @@
 
 		var checkbox = document.querySelector('#switch');
 		var root = document.documentElement;
-		var darkPrimary = root.style.getPropertyValue('--primaryDark');
-		var	darkBackground = root.style.getPropertyValue('--darkBackground');
+		var darkPrimary = getComputedStyle(document.body).getPropertyValue('--primaryDark');
+		var	darkBackground = getComputedStyle(document.body).getPropertyValue('--darkBackground');
+
+		
+		var primaryLight = getComputedStyle(document.body).getPropertyValue('--primaryLight');
+		var	primaryBackground = getComputedStyle(document.body).getPropertyValue('--primaryBackground');
 
         checkbox.addEventListener('change', function() {
-			console.log(darkPrimary);
 			
-			root.style.setProperty('--primaryLight', darkPrimary);
-			root.style.setProperty('--primaryBackground', --darkBackground);
+			if(this.checked) {
+				trans()
+				root.style.setProperty('--primaryLight', darkPrimary);
+				root.style.setProperty('--primaryBackground', darkBackground);
+			} else{
+				trans()
+				root.style.setProperty('--primaryLight', primaryLight);
+				root.style.setProperty('--primaryBackground', primaryBackground);
+			}
 		});
 
+		function trans() {
+            document.documentElement.classList.add('transition');
+            window.setTimeout(function(){
+                document.documentElement.classList.remove('transition');
+            }, 1000)
+		};
+		
 		$(document).scroll(function(){
 			//HEADER + HERO + SIDEBAR ANIMATIONS
 			if($(window).scrollTop() == 0){
