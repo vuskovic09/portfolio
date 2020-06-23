@@ -22,19 +22,22 @@
         &-single {
             background: $color-background;
             border-radius: 5px;
-            box-shadow: -5px -5px 20px $color-white,  5px 5px 20px $color-shadow;
+            box-shadow: -5px -5px 20px $color-shadow-one,  5px 5px 20px $color-shadow;
             padding: 3px;
             text-align: center;
             min-height: 350px;
             margin: 0;
+            h2 {
+                color: $color-card-text;
+            }
         }
     }
 
     &-about, &-contact {
         padding: 100px;
         
+        
         &-text {
-            color: $color-white;
             font-size: 24px;
         }
     }

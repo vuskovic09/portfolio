@@ -26,10 +26,16 @@
 		var root = document.documentElement;
 		var darkPrimary = getComputedStyle(document.body).getPropertyValue('--primaryDark');
 		var	darkBackground = getComputedStyle(document.body).getPropertyValue('--darkBackground');
-
+		var darkShadowOne =  getComputedStyle(document.body).getPropertyValue('--darkShadowOne');
+		var darkShadowTwo =  getComputedStyle(document.body).getPropertyValue('--darkShadowTwo');
+		var darkText =  getComputedStyle(document.body).getPropertyValue('--darkText');
+		
 		
 		var primaryLight = getComputedStyle(document.body).getPropertyValue('--primaryLight');
 		var	primaryBackground = getComputedStyle(document.body).getPropertyValue('--primaryBackground');
+		var primaryShadowOne =  getComputedStyle(document.body).getPropertyValue('--primaryShadowOne');
+		var primaryShadowTwo =  getComputedStyle(document.body).getPropertyValue('--primaryShadowTwo');
+		var primaryText =  getComputedStyle(document.body).getPropertyValue('--primaryText');
 
         checkbox.addEventListener('change', function() {
 			
@@ -37,10 +43,16 @@
 				trans()
 				root.style.setProperty('--primaryLight', darkPrimary);
 				root.style.setProperty('--primaryBackground', darkBackground);
+				root.style.setProperty('--primaryShadowOne', darkShadowOne);
+				root.style.setProperty('--primaryShadowTwo', darkShadowTwo);
+				root.style.setProperty('--primaryText', darkText);
 			} else{
 				trans()
 				root.style.setProperty('--primaryLight', primaryLight);
 				root.style.setProperty('--primaryBackground', primaryBackground);
+				root.style.setProperty('--primaryShadowOne', primaryShadowOne);
+				root.style.setProperty('--primaryShadowTwo', primaryShadowTwo);
+				root.style.setProperty('--primaryText', primaryText);
 			}
 		});
 

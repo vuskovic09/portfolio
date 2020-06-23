@@ -15,9 +15,15 @@ $line-height: 1.4;
 :root {
     --primaryLight: #0267C1;
     --primaryBackground: #dde1e7;
+    --primaryShadowOne: #fff;
+    --primaryShadowTwo: #babecc;
+    --primaryText: #000;
      
     --primaryDark: #db9513;
     --darkBackground: #0e1415;
+    --darkShadowOne: #000;
+    --darkShadowTwo: #1f1f1f;
+    --darkText: #fff;
 }
 
 // Colors
@@ -25,7 +31,9 @@ $color-white: #FFF;
 $color-black: #000;
 $color-primary: var(--primaryLight);
 $color-background: var(--primaryBackground);
-$color-shadow: #BABECC;
+$color-shadow: var(--primaryShadowTwo);
+$color-shadow-one: var(--primaryShadowOne);
+$color-card-text: var(--primaryText);
 $color-github: #833ab4;
 $color-linkedin: #0077b5;
 $color-twitter: #1da1f2;
