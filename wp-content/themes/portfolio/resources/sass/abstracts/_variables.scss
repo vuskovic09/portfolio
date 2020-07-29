@@ -17,23 +17,32 @@ $line-height: 1.4;
     --primaryBackground: #dde1e7;
     --primaryShadowOne: #fff;
     --primaryShadowTwo: #babecc;
-    --primaryText: #000;
+    
+    --blackText: #000;
+    --whiteText: #fff;
      
     --primaryDark: #db9513;
     --darkBackground: #0e1415;
     --darkShadowOne: #000;
     --darkShadowTwo: #1f1f1f;
     --darkText: #fff;
+
+    --tabTextRight: #000;
 }
 
 // Colors
 $color-white: #FFF;
 $color-black: #000;
+
 $color-primary: var(--primaryLight);
 $color-background: var(--primaryBackground);
 $color-shadow: var(--primaryShadowTwo);
 $color-shadow-one: var(--primaryShadowOne);
-$color-card-text: var(--primaryText);
+$color-tab-text-right: var(--tabTextRight);
+
+$color-black-text: var(--blackText);
+$color-white-text: var(--whiteText);
+
 $color-github: #833ab4;
 $color-linkedin: #0077b5;
 $color-twitter: #1da1f2;

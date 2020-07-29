@@ -35,7 +35,9 @@
 		var	primaryBackground = getComputedStyle(document.body).getPropertyValue('--primaryBackground');
 		var primaryShadowOne =  getComputedStyle(document.body).getPropertyValue('--primaryShadowOne');
 		var primaryShadowTwo =  getComputedStyle(document.body).getPropertyValue('--primaryShadowTwo');
-		var primaryText =  getComputedStyle(document.body).getPropertyValue('--primaryText');
+		
+		var blackText =  getComputedStyle(document.body).getPropertyValue('--blackText');
+		var whiteText =  getComputedStyle(document.body).getPropertyValue('--whiteText');
 
         checkbox.addEventListener('change', function() {
 			
@@ -45,14 +47,16 @@
 				root.style.setProperty('--primaryBackground', darkBackground);
 				root.style.setProperty('--primaryShadowOne', darkShadowOne);
 				root.style.setProperty('--primaryShadowTwo', darkShadowTwo);
-				root.style.setProperty('--primaryText', darkText);
+				root.style.setProperty('--blackText', whiteText);
+				root.style.setProperty('--tabTextRight', darkText);
 			} else{
 				trans()
 				root.style.setProperty('--primaryLight', primaryLight);
 				root.style.setProperty('--primaryBackground', primaryBackground);
 				root.style.setProperty('--primaryShadowOne', primaryShadowOne);
 				root.style.setProperty('--primaryShadowTwo', primaryShadowTwo);
-				root.style.setProperty('--primaryText', primaryText);
+				root.style.setProperty('--blackText', blackText);
+				root.style.setProperty('--tabTextRight', blackText);
 			}
 		});
 

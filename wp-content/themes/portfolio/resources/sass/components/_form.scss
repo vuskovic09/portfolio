@@ -4,8 +4,11 @@
         
         &-title {
             @include link-underline($color-primary, 3px);
-
             cursor: default;
+
+            h1 { 
+                color: $color-black-text;
+            }
         }
 
         .input-group {
@@ -29,7 +32,7 @@
                 border: 0;
                 border-radius: 18px;
                 padding: 16px;
-                text-shadow: 1px 1px 0 $color-white;
+                text-shadow: 1px 1px 0 $color-shadow-one;
             }
 
             textarea {
@@ -43,12 +46,12 @@
             }
 
             input, textarea {
-                box-shadow:  inset 2px 2px 5px $color-shadow, inset -5px -5px 10px $color-white;
+                box-shadow:  inset 2px 2px 5px $color-shadow, inset -5px -5px 10px $color-shadow-one;
                 margin-right: 8px;
                 transition: all 0.2s ease-in-out;
               
                 &:focus {
-                  box-shadow:  inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+                  box-shadow:  inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-shadow-one;
 
                   &::placeholder {
                       opacity: 0.5;
@@ -58,7 +61,7 @@
             }
 
             button {
-                box-shadow: -5px -5px 20px $color-white,  5px 5px 20px $color-shadow;
+                box-shadow: -5px -5px 20px $color-shadow-one,  5px 5px 20px $color-shadow;
                 color:$color-primary;
                 cursor: pointer;
                 display: block;
@@ -68,11 +71,11 @@
                 width: 29%;
                 
                 &:hover {
-                  box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+                  box-shadow: -2px -2px 5px $color-shadow, 2px 2px 5px $color-shadow-one;
                 }
                 
                 &:active {
-                  box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+                  box-shadow: inset 1px 1px 2px $color-shadow-one, inset -1px -1px 2px $color-shadow;
                 }
               }
         }
