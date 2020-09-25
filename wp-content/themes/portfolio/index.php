@@ -87,7 +87,11 @@
 			<div class="col-lg-12">
 				<div class="main-about-text">
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias sunt, ut modi eum magni labore deserunt iusto possimus incidunt rem repellat totam laborum culpa voluptatem. Facere error sequi aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur officia suscipit esse a eius rem, eos repudiandae cum ullam ad tempora debitis perferendis optio! Odit quaerat porro placeat eveniet.
+						My name is Filip Vušković, a web developer from Belgrade, Serbia. I have 3 years of experience in, both, front-end and back-end web development. I, however, tend to focus my time and efforts more towards front-end development and design.
+						</br>
+						I mainly work with JavaScript, and am currently making an effort to learn the Vue.js framework, HTML, CSS (SASS) and some PHP here and there. I am constantly looking to learn new technologies, frameworks and libraries whilst doing my best to implement best practices and effective code into my products.
+						</br>
+						Aside from web development, I am passionate about music and photography alike, treating both of those as semi-serious hobbies whenever I find the time.
 					</p>
 				</div>	
 			</div>
